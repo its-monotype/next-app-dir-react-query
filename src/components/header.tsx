@@ -1,6 +1,6 @@
 'use client';
 
-import { getUser } from '@/api/get-user';
+import { getUser } from '@/utils/get-user';
 import { useQuery } from '@tanstack/react-query';
 
 export const Header = () => {
