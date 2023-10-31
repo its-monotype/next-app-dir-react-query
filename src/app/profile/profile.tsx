@@ -1,9 +1,9 @@
 'use client';
 
-import { getUser } from '@/api/get-user';
+import { getUser } from '@/utils/get-user';
 import { useQuery } from '@tanstack/react-query';
 
-export const Profile = async () => {
+export const Profile = () => {
   const { data: user } = useQuery({
     queryKey: ['user'],
     queryFn: getUser,
